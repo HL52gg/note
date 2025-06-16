@@ -3,8 +3,24 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
 
   <url>
+    <loc>http://localhost:1313/note/categories/</loc>
+    <lastmod>2025-06-16T10:31:12+08:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="http://localhost:1313/note/en/categories/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-cn"
+      href="http://localhost:1313/note/categories/"
+    />
+  </url>
+  <url>
     <loc>http://localhost:1313/note/</loc>
-    <lastmod>2025-06-14T00:15:46+08:00</lastmod>
+    <lastmod>2025-06-16T10:31:12+08:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
     <xhtml:link
@@ -16,6 +32,34 @@
       rel="alternate"
       hreflang="zh-cn"
       href="http://localhost:1313/note/"
+    />
+  </url>
+  <url>
+    <loc>http://localhost:1313/note/docs/mathematical_analysis/riemann_integration/</loc>
+    <lastmod>2025-06-16T10:31:12+08:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/note/categories/%E6%95%B0%E5%AD%A6%E5%88%86%E6%9E%90/</loc>
+    <lastmod>2025-06-16T10:31:12+08:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/note/docs/</loc>
+    <lastmod>2025-06-16T10:31:12+08:00</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link
+      rel="alternate"
+      hreflang="en"
+      href="http://localhost:1313/note/en/docs/"
+    />
+    <xhtml:link
+      rel="alternate"
+      hreflang="zh-cn"
+      href="http://localhost:1313/note/docs/"
     />
   </url>
   <url>
@@ -39,28 +83,6 @@
     <lastmod>2025-06-13T23:03:58+08:00</lastmod>
     <changefreq>always</changefreq>
     <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/note/docs/test2/</loc>
-    <lastmod>2025-06-13T23:03:58+08:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/note/docs/</loc>
-    <lastmod>2025-06-13T23:03:58+08:00</lastmod>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="http://localhost:1313/note/en/docs/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-cn"
-      href="http://localhost:1313/note/docs/"
-    />
   </url>
   <url>
     <loc>http://localhost:1313/note/authors/</loc>
@@ -105,21 +127,6 @@
       rel="alternate"
       hreflang="zh-cn"
       href="http://localhost:1313/note/tags/"
-    />
-  </url>
-  <url>
-    <loc>http://localhost:1313/note/categories/</loc>
-    <changefreq>always</changefreq>
-    <priority>0.5</priority>
-    <xhtml:link
-      rel="alternate"
-      hreflang="en"
-      href="http://localhost:1313/note/en/categories/"
-    />
-    <xhtml:link
-      rel="alternate"
-      hreflang="zh-cn"
-      href="http://localhost:1313/note/categories/"
     />
   </url>
 </urlset>
