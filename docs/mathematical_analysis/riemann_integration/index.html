@@ -108,7 +108,7 @@
     "keywords": [""],
     
     "mainEntityOfPage": "true",
-    "wordCount": "2991"
+    "wordCount": "3647"
   }]
   </script>
 
@@ -816,8 +816,10 @@
         </li>
         <li><a href="#有界变差函数-1">有界变差函数</a></li>
         <li><a href="#总变差">总变差</a></li>
+        <li><a href="#连续有界变差函数">连续有界变差函数</a></li>
       </ul>
     </li>
+    <li><a href="#有界函数的黎曼积分">有界函数的黎曼积分</a></li>
   </ul>
 </nav>
   </div>
@@ -848,8 +850,10 @@
         </li>
         <li><a href="#有界变差函数-1">有界变差函数</a></li>
         <li><a href="#总变差">总变差</a></li>
+        <li><a href="#连续有界变差函数">连续有界变差函数</a></li>
       </ul>
     </li>
+    <li><a href="#有界函数的黎曼积分">有界函数的黎曼积分</a></li>
   </ul>
 </nav>
   </div>
@@ -1150,7 +1154,7 @@ $$<p>
 此即\(|f(x)| \leq |f(a)| + M \), 即\([a,b]\)上的有界变差函数一定有界.</p>
 </li>
 <li>
-<p>如果\(f\)在\([a,b]\)上单调, 则\(f\in BV([a,b])\) (Basic Analysis IV - P45).</p>
+<p>如果\(f\)在\([a,b]\)上单调, 则\(f\in BV([a,b])\)</p>
 </li>
 <li>
 <p>假设\(f \in C([a,b])\), \(f\)在\((a,b)\)上可微, \(||f'||_{\infty} = max_{a\leq x \leq b} f'(x) < \infty\), 则\(f\in BV([a,b])\)</p>
@@ -1186,7 +1190,76 @@ $$<p>
     </span>        
     
 </h3>
+<p>总变差\(V\)在区间上具有可加性, 即(Basic Analysis IV - P49)</p>
+<ul>
+<li>如果\(f\in BV([a,b])\)且\(c\in[a,b]\), 则\(f\in BV([a,c])\), \(f\in BV([c,d])\)且\(V([f;a,b]) = V([f;a,c])+V([f;c,b])\)</li>
+</ul>
+<p>令\(f\in BV([a,b])\), 定义\(f\)的变差函数(variation function)为
+</p>
+$$
+    V_f(x) = \begin{cases}
+        0 & x=a \\
+        V(f;a,x) & a< x \leq b
+    \end{cases}
+$$<ul>
+<li>
+<p>如果\(f\in BV([a,b])\), 则\(V_f\)和\(V_f - f\)在\([a,b]\)上单调递增(Basic Analysis IV - P50)</p>
+</li>
+<li>
+<p>任何\(f\in BV([a,b])\)可以表示为两个在\([a,b]\)上单调递增函数的差</p>
+<ul>
+<li><strong>证明</strong>: 如果\(f = u -v\), \(u\)和\(v\)为单调递增函数, 则由已知, \(u\)和\(v\)为有界变差函数, 那么\(f\)也是; 另一方面, 如果\(f\in BV([a,b])\), 则令\(u = V(f)\), \(v = V(f) - f\)</li>
+<li>由已知, 单调函数可以继续分解为连续部分和不连续部分(Saltus函数)</li>
+</ul>
+</li>
+</ul>
 
+<h3 class="relative group">连续有界变差函数 
+    <div id="连续有界变差函数" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e8%bf%9e%e7%bb%ad%e6%9c%89%e7%95%8c%e5%8f%98%e5%b7%ae%e5%87%bd%e6%95%b0" aria-label="锚点">#</a>
+    </span>        
+    
+</h3>
+<ul>
+<li>
+<p>令\(f\in BV([a,b])\), 则对所有\(x\in [a,b)\)极限\(f(x^+)\)存在, 对所有\(x\in (a,b]\)极限\(f(x^-)\)存在</p>
+<ul>
+<li>注意单调函数单侧极限必存在</li>
+</ul>
+</li>
+<li>
+<p>令\(f\in BV([a,b])\), 则\(f\)至多由可数不连续点</p>
+<ul>
+<li>注意单调函数的不连续点可数, 两个可数集的并仍可数</li>
+</ul>
+</li>
+<li>
+<p>令\(f\in BV([a,b])\), 则\(f\)在\(c\in [a,b]\)连续当且仅当\(V_f\)在\(c\)连续 (Baisc Analysis IV - P52-P54)</p>
+</li>
+<li>
+<p>在\([a,b]\)上, \(f\)连续且为有界变差函数当且仅当\(V_f\)和\(V_f - f\)单调递增且连续</p>
+</li>
+</ul>
+
+<h2 class="relative group">有界函数的黎曼积分 
+    <div id="有界函数的黎曼积分" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 ltr:-left-6 rtl:-right-6 not-prose group-hover:opacity-100">
+        <a class="group-hover:text-primary-300 dark:group-hover:text-neutral-700"
+            style="text-decoration-line: none !important;" href="#%e6%9c%89%e7%95%8c%e5%87%bd%e6%95%b0%e7%9a%84%e9%bb%8e%e6%9b%bc%e7%a7%af%e5%88%86" aria-label="锚点">#</a>
+    </span>        
+    
+</h2>
+<p>令\(f\in B([a,b])\), \(\pi = \{x_0=a,x_1,\cdots,x_p=b\}\in\Pi[a,b]\), \(\sigma = \{s_1,\cdots,s_p\}\), \(s_j\in[x_{j-1},x_j]\). 黎曼和定义为
+</p>
+$$
+    S(f;\pi,\sigma) = \sum_{\pi}f(s_j)\Delta x_j
+$$
           
           
           
@@ -1231,6 +1304,28 @@ $$<p>
       <hr class="border-dotted border-neutral-300 dark:border-neutral-600" />
       <div class="flex justify-between pt-3">
         <span>
+          
+            <a class="flex group mr-3" href="/note/docs/general_topology/norms_metrics/">
+              <span
+                class="mr-3 text-neutral-700 group-hover:text-primary-600 ltr:inline rtl:hidden dark:text-neutral dark:group-hover:text-primary-400"
+                >&larr;</span
+              >
+              <span
+                class="ml-3 text-neutral-700 group-hover:text-primary-600 ltr:hidden rtl:inline dark:text-neutral dark:group-hover:text-primary-400"
+                >&rarr;</span
+              >
+              <span class="flex flex-col">
+                <span
+                  class="mt-[0.1rem] leading-6 group-hover:underline group-hover:decoration-primary-500"
+                  >范数与度量</span
+                >
+                <span class="mt-[0.1rem] text-xs text-neutral-500 dark:text-neutral-400">
+                  
+                    <time datetime="2025-06-17T13:13:50&#43;08:00">2025-06-17</time>
+                  
+                </span>
+              </span>
+            </a>
           
         </span>
         <span>
